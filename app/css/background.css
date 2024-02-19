@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Background */
+#Container {
+	@apply
+		-z-50
+		relative
+		blur-[3px]
+		opacity-50
+		w-full
+}
+#Mario {
+	@apply
+		absolute
+		rotate-[35deg]
+		w-20
+		h-20
+		end-14
+}
+#Sphere-1{
+	@apply
+		absolute
+		w-16
+		h-16
+		rounded-full
+		start-80
+		inset-48
+		bg-gradient-to-bl
+		from-Primary
+		to-DarkAccent
+		via-DarkPrimary
+		/* hover:from-[#00385E]
+		hover:to-[#006634]
+		hover:via-[#006D7B] */
+}
+#Sphere-2{
+	@apply
+		absolute
+		w-40
+		h-40
+		rounded-full
+		-start-20
+		inset-40
+		bg-gradient-to-tl
+		from-Primary
+		to-DarkAccent
+		via-DarkPrimary
+		/* hover:from-[#00385E]
+		hover:to-[#006634]
+		hover:via-[#006D7B] */
+}
+#Sphere-3 {
+	@apply
+		absolute
+		w-10
+		h-10
+		rounded-full
+		top-[5rem]
+		start-2/3
+		bg-gradient-to-bl
+		from-Primary
+		to-DarkAccent
+		via-DarkPrimary
+		/* hover:from-[#00385E]
+		hover:to-[#006634]
+		hover:via-[#006D7B] */
+}
+#Sphere-4 {
+	@apply
+		absolute
+		w-36
+		h-36
+		rounded-full
+		top-40
+		end-20
+		bg-gradient-to-tl
+		from-Primary
+		to-DarkAccent
+		via-DarkPrimary
+		/* hover:from-[#00385E]
+		hover:to-[#006634]
+		hover:via-[#006D7B] */
+}
+#Sphere-5 {
+	@apply
+		absolute
+		rounded-full
+		w-20
+		h-20
+		top-[26rem]
+		start-20
+		bg-gradient-to-br
+		from-Primary
+		to-DarkAccent
+		via-DarkPrimary
+		/* hover:from-[#00385E]
+		hover:to-[#006634]
+		hover:via-[#006D7B] */
+}
+#Sphere-6 {
+	@apply
+		absolute
+		rounded-full
+		w-20
+		h-20
+		top-[34rem]
+		start-[26.5rem]
+		bg-gradient-to-bl
+		from-Primary
+		to-DarkAccent
+		via-DarkPrimary
+		/* hover:from-[#00385E]
+		hover:to-[#006634]
+		hover:via-[#006D7B] */
+}
+#Sphere-7 {
+	@apply
+		absolute
+		rounded-full
+		w-28
+		h-28
+		-top-8
+		start-[23rem]
+		bg-gradient-to-bl
+		from-Primary
+		to-DarkAccent
+		via-DarkPrimary
+		/* hover:from-[#00385E]
+		hover:to-[#006634]
+		hover:via-[#006D7B] */
+}
+#Republic {
+	@apply
+		absolute
+		w-20
+		h-20
+		start-[31rem]
+		inset-36
+}
+#Vanu {
+	@apply
+		absolute
+		w-20
+		h-20
+		-rotate-[25deg]
+		end-1/4
+		top-[29rem]
+}
+#Minecraft {
+	@apply
+		absolute
+		w-16
+		h-16
+		end-1
+		top-[24rem]
+}
+#Planetside {
+	@apply
+		absolute
+		w-16
+		h-16
+		top-24
+		left-36
+
+}
+#Ghost {
+	@apply
+		absolute
+		w-16
+		h-16
+		left-[26.5rem]
+		top-[23.5rem]
+		rotate-[25deg]
+}
+#Goku {
+	@apply
+		flex
+		absolute
+		w-16
+		h-16
+		top-[30rem]
+		start-[17rem]
+}

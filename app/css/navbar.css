@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Navbar */
+#NavContainer {
+	@apply
+		relative
+		flex
+		p-2
+		mt-2
+		mx-12
+		w-fit
+}
+.NavLink {
+	@apply
+		text-center
+		align-text-bottom
+		h-fit
+		text-Text
+		mx-3
+}
+.ShapeContainer {
+	@apply
+		flex
+		items-center
+		relative
+}
+#HomeNavContainer {
+	@apply
+		flex
+		flex-wrap
+		flex-col
+		ml-2
+}
+#HomeLine {
+	@apply
+		bg-Secondary
+		w-full
+		h-1
+}
+#HomeDiamond {
+	@apply
+		absolute
+		-left-1
+		w-0
+		h-0
+		border-4
+		border-Primary
+		rotate-45
+		/* border-Secondary
+		bg-Secondary */
+}
+#Sphere {
+	@apply
+		mt-5
+		rounded-full
+		w-2.5
+		h-2.5
+		/* margin top and negative margin on the others */
+		bg-Accent
+		bg-gradient-to-tr
+		from-Primary
+		to-DarkAccent
+		via-DarkPrimary
+}
+#ProjectsNavContainer {
+	@apply
+		relative
+		flex
+		flex-wrap
+		flex-col
+		mr-2
+}
+#ProjectsLine {
+	@apply
+		bg-Secondary
+		w-full
+		h-1
+}
+#ProjectsDiamond {
+	@apply
+		absolute
+		-right-1
+		w-0
+		h-0
+		border-4
+		border-Primary
+		rotate-45
+}
+#ProjectsNavContainer > .ShapeContainer {
+	@apply
+		hidden
+}
+#JourneySphere {
+	@apply
+		z-10
+		mt-5
+		rounded-full
+		w-2.5
+		h-2.5
+		/* margin top and negative margin on the others */
+		bg-Accent
+		bg-gradient-to-tr
+		from-Primary
+		to-DarkAccent
+		via-DarkPrimary
+
+
+		hidden
+}
+#JourneyNavContainer {
+	@apply
+		relative
+		flex
+		flex-wrap
+		flex-col
+		mr-0
+
+		hidden
+}
+#JourneyLine {
+	@apply
+		bg-Secondary
+		w-full
+		h-1
+}
+#JourneyDiamond {
+	@apply
+		absolute
+		-right-1
+		w-0
+		h-0
+		border-4
+		border-Primary
+		rotate-45
+}
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.animate-fade-in {
+	animation: fadeIn 1s ease-in-out;
+}
+
+@media (max-width: 780px) {
+	#NavContainer {
+		@apply
+			mx-0.5
+	}
+	.NavLink {
+		@apply
+			text-sm
+	}
+	#HomeNavContainer {
+		@apply
+			ml-0
+	}
+}
+/*
+>need js to:
+set right margin on projects container to 0 
+hide Porject Diamond
+show journeyspehere
+unhide joruney
+*/

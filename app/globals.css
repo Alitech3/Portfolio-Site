@@ -2,32 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/* Global layout */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	@apply
+		m-0
+		bg-Background
+		h-screen
+		w-screen
+		flex
+		justify-center
+		items-center
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+#BackContainer {
+	@apply
+		flex
+		flex-wrap
+		rounded-2xl
+		border-2
+		border-Secondary
+		overflow-hidden
+		z-10
+		w-11/12
+		scroll-smooth
+		h-5/6
+}
+#Foreground {
+	@apply
+		flex
+		justify-center
+		overflow-y-auto
+		min-h-52
+		h-4/5
+		w-full
+}
+::-webkit-scrollbar {
+	@apply
+		w-1
+		bg-Background
+		rounded-full
+}
+::-webkit-scrollbar-thumb {
+	@apply
+		bg-Accent
+		rounded-full
+}
+::-webkit-scrollbar-thumb:hover {
+	@apply
+		bg-[#8edde8]
+		rounded-full
+}
+::-webkit-scrollbar:hover {
+	@apply
+		bg-BackContainer
+		rounded-full
 }

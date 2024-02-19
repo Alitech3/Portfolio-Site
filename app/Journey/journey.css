@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#JourneyContainer {
+	@apply
+		w-full
+		text-Text
+}
+.JourneyIntro {
+	@apply
+		shadow-2xl
+		self-center
+		bg-BackContainer
+		border-[2.5px]
+		border-Accent
+		py-4
+		px-8
+		mx-12
+		mt-2
+		mb-4
+		rounded-3xl
+		text-Text
+		h-fit
+		text-center
+}
+#JourneyImages {
+	@apply
+		w-full
+		h-full
+		flex
+}
+#Column1 {
+	@apply
+		flex
+		flex-wrap
+		justify-end
+		w-1/2
+		h-full
+}
+#Column1 > * {
+	@apply
+		shadow-2xl
+		w-3/4
+		h-1/2
+		border-2
+		border-Accent
+		rounded-2xl
+		mb-20
+		mr-2
+}
+#Column2 {
+	@apply
+		flex
+		flex-wrap
+		w-1/2
+		h-full
+}
+#Column2 > * {
+	@apply
+		shadow-2xl
+		w-3/4
+		h-1/2
+		border-2
+		border-Accent
+		rounded-2xl
+		ml-2
+		mt-40
+		-mb-10
+}
+@media (max-width: 780px) {
+	.JourneyIntro {
+		@apply
+			mx-2.5
+			rounded-2xl
+			shadow-2xl
+	}
+	#JourneyImages {
+		@apply
+			flex-col
+			justify-center
+			items-center
+			h-fit
+			pb-2
+	}
+	#Column1 > * {
+		@apply
+			m-0
+			my-2
+			shadow-2xl
+	}
+	#Column2 > * {
+		@apply
+			m-0
+			my-2
+			shadow-2xl
+	}
+	#Column1 {
+		@apply
+			w-full
+			justify-center
+	}
+	#Column2 {
+		@apply
+			w-full
+			justify-center
+	}
+}

@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Projects */
+#PageContainer {
+	@apply
+		w-full
+		text-Text
+}
+#PageContainer > * {
+	@apply
+		shadow-2xl
+}
+.ProjectsIntro {
+	@apply
+		flex
+		justify-center
+		bg-BackContainer
+		border-[2.5px]
+		border-Accent
+		mt-4
+		py-4
+		px-2
+		mx-12
+		rounded-2xl
+}
+#PageContainer > *:last-child {
+	@apply
+		hidden
+}
+.ProjectContainer{
+	@apply
+		flex
+		mx-12
+		mt-5
+		p-2
+		h-fit
+		border-2
+		border-Accent
+		bg-BackContainer
+		rounded-2xl
+		overflow-x-auto
+}
+#ShowcaseContainer {
+	@apply
+		mx-4
+}
+.Title {
+	@apply
+		text-xl
+		font-semibold
+		w-full
+		h-fit
+		text-center
+		my-2
+}
+.ProjectDescription {
+	@apply
+		flex
+		flex-wrap
+		self-start
+		flex-col
+		w-full
+		text-sm
+		my-2
+}
+.ProjectDescription > p:first-of-type {
+	@apply
+		flex
+		self-start
+		text-xl
+		font-bold
+}
+.ProjectDescription > p:nth-child(2) {
+	@apply
+		text-base
+		mb-2
+}
+.Showcase {
+	@apply
+		relative
+		rounded-2xl
+		overflow-hidden
+		w-36
+		h-36
+}
+.Showcase > * {
+	@apply
+		object-cover
+}
+@media (max-width: 780px) {
+	.ProjectsIntro {
+		@apply
+			mx-2.5
+			justify-center
+			items-center
+			py-1
+			px-1.5
+			text-center
+	}
+	.ProjectContainer {
+		@apply
+			flex-col
+			mx-2.5
+	}
+	.ProjectContainer > * {
+		@apply
+			self-center
+	}
+}
